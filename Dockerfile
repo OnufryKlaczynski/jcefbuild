@@ -1,14 +1,16 @@
-FROM i386/debian:stretch-slim
+FROM i386/debian:buster-slim
 
 ENV BASE_PACKAGES git libgtk-3-dev libgtk2.0-dev libxss1 libxt-dev
 ENV BUILD_TOOLS openjdk-8-jdk python3.7 lbzip2 rsync ninja-build clang-10 cmake
 
 RUN apt-get -q update && \
-    apt-get -q install --no-install-recommends --yes wget apt-transport-https gnupg software-properties-common
+    apt-get -q install --no-install-recommends --yes wget apt-transport-https gnupg software-properties-common && \
+    apt-get install software-properties-common
 
 # clang package sources
 RUN wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | apt-key add - && \
     add-apt-repository "deb http://apt.llvm.org/buster/ llvm-toolchain-buster-10 main" && \
+    apt-add-repository 'deb http://security.debian.org/debian-security stretch/updates main' && \
     mkdir -p /usr/share/man/man1
 
 # install tools
