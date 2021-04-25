@@ -18,7 +18,7 @@
 
 <div id="badges" align="center">
 
-[![Travis (.com) branch](https://img.shields.io/travis/com/jcefbuild/jcefbuild/master?label=osx%2Flinux&logo=travis-ci&logoColor=black&style=for-the-badge)](https://travis-ci.com/jcefbuild/jcefbuild)
+[![Travis (.com) branch](https://img.shields.io/travis/com/OnufryKlaczynski/jcefbuild/master?label=osx%2Flinux&logo=travis-ci&logoColor=black&style=for-the-badge)](https://travis-ci.com/OnufryKlaczynski/jcefbuild)
 
 [![Build Status Appveyor](https://img.shields.io/appveyor/build/smac89/jcefbuild?color=%2300c7f4&label=Windows%20x86%20%2F%20x64&logo=appveyor&logoColor=black&style=for-the-badge)](https://ci.appveyor.com/project/smac89/jcefbuild)
 
