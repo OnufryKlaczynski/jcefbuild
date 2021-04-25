@@ -5,7 +5,7 @@ if [[ "${TRAVIS_OS_NAME}" == 'linux' ]]; then
     source jdk_switcher/jdk_switcher.sh
   fi
   # On Linux, we can use jdk_switcher
-  jdk_switcher use openjdk11
+  jdk_switcher use openjdk8
 else
   # And on Macosx, we can use the java_home command
   export JAVA_HOME="$(/usr/libexec/java_home -v 11)"
