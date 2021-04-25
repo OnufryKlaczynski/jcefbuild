@@ -8,7 +8,7 @@
 
 |    |Windows|Linux|MacOS|
 |----|-------|-----|-----|
-|**Java**|AdoptOpenJDK 11|OpenJDK11|AdoptOpenJDK 11|
+|**Java**|AdoptOpenJDK 8|OpenJDK8|AdoptOpenJDK 8|
 |**Compiler**|Visual Studio 2017|Clang 10|Xcode 12|
 |**Build**|Python 3.7; `msbuild`|Python 3.7; `ninja`|Python 3.8; `ninja`|
 

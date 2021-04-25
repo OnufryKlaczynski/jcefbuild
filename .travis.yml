@@ -17,7 +17,7 @@ matrix:
   include:
     - os: linux
       dist: xenial
-      jdk: openjdk11
+      jdk: openjdk8
       env:
         - ARCH_DIST=linux64
         - PYTHON_EXECUTABLE='/usr/bin/python3.7'
@@ -55,7 +55,7 @@ matrix:
             - gnu-tar
             - cmake
           taps: AdoptOpenJDK/openjdk
-          casks: adoptopenjdk11
+          casks: adoptopenjdk8
 
     - os: linux
       services: docker
@@ -77,7 +77,7 @@ matrix:
 
     - os: linux
       if: tag IS present
-      jdk: openjdk11
+      jdk: openjdk8
       script:
         - cd $JCEF_DIR/tools
         - ./make_docs.sh
