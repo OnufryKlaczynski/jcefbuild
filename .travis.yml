@@ -40,9 +40,9 @@ matrix:
             - build-essential
             - libgtk2.0-dev
 
-  
     - os: linux
       services: docker
+      jdk: openjdk8
       env:
         - ARCH_DIST=linux32
         - CC=clang-10
